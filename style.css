@@ -1,0 +1,113 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul{
+  list-style: none;
+  margin-top: 7.2rem;
+  color: #090039;
+}
+
+a {
+  text-decoration: none;
+  color: #090039;
+}
+
+a:hover{
+  color: #7158EF;
+  font-weight: bold;
+}
+
+
+body {
+  background: #ECE9FD;
+  font-family: 'Epilogue', sans-serif;
+  padding: 6.0rem 2.3rem 6.6rem;
+  font-size: 1.6rem;
+  color: #090039;
+}
+
+main{
+  max-width: 33.0rem;  
+  margin: 0 auto;
+}
+
+:root{
+  font-size: 62.5%; /* torna a fonte como 10px */
+}
+
+h1{
+  font-size: 4.0rem;
+  line-height: 4.8rem;
+  margin-bottom: 1.5rem;
+  font-weight: 800;
+}
+/* Para tornar a página responsiva, não posso utilizar o tamanho com px
+Por isso é necessário utilizar o rem. 1rem equivale a 16px. Para saber o valor correto
+é necessário calular a fonte (40px) / 16 = 2.5rem */
+
+main p:first-child{
+  color: #7158EF;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 1.6rem;
+  line-height: 3.2rem;
+  margin-bottom: 1.7rem;
+}
+ main p{
+  color:  rgba(10, 0, 57, 0.64);
+  line-height: 3.2rem;
+  margin-bottom: 3.2rem;
+ }
+
+ ul li {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 3.2rem;
+  display: flex;
+  max-width: 25.7rem ;
+  gap: 3.8rem;
+ }
+
+ ul li + li{
+  margin-top: 3.2rem;
+ }
+
+ ul li:first-child{
+  gap: 4.9rem;
+ }
+
+ ul li span{
+  font-size: 7.2rem;
+  font-weight: 800;
+  letter-spacing: -2px;
+  line-height: 8.0rem;
+
+ }
+
+ /* Media queries */
+ @media (min-width:700px){
+  body{
+    padding: 8rem;
+  }
+  main{
+    display: flex;
+    gap: 10rem;
+    max-width: 1200px;
+  }
+
+  main > div{
+    max-width: 484px;
+  }
+
+  ul li{
+    max-width: 450px;
+    gap:5.3rem;
+    align-items: center;
+  }
+  ul li:first-child{
+    gap: 66px;
+   }
+ }
